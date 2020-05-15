@@ -11,14 +11,10 @@ class ContactMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $name;
-    public $email;
-    public $mess;
-    public function __construct($name,$email,$mess)
+    public $mailC;
+    public function __construct($mailC)
     {
-        $this->name= $name;
-        $this->email= $email;
-        $this->mess= $mess;
+        $this->mailC= $mailC;
     }
 
     /**

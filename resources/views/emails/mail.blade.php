@@ -1,11 +1,11 @@
 @component('mail::message')
 # Hey Admin
 
-- {{$name}}
-- {{$email}}
+- {{$mailC['name']}}
+- {{$mailC['email']}}
 
 @component('mail::panel')
-{{$mess}}
+{{$mailC['mess']}}
 @endcomponent
 
 Thanks,<br>

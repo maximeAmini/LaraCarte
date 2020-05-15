@@ -8,8 +8,6 @@
         <p class="text-muted">If you have trouble in this service, please <a href="maximeamini1@gmail.com">Ask for help</a></p>
     </div>
 
-    @endisset
-
     <form action="{{ route('contact.store') }}" method="post" class="form-horizontal">
         @csrf
         <div class="form-group">
