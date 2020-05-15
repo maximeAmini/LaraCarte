@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactRequest;
 use App\Mail\ContactMail;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -15,6 +16,8 @@ class ContactController extends Controller
 
     public function store(ContactRequest $request)
     {
-        return new ContactMail($request['name'],$request['email'],$request['mess']);
+        $mail = new ContactMail($request['name'],$request['email'],$request['mess']);;
+        Mail::to('maximeamini1@gmail.com')->send($mail);
+        return redirect(route('home'));
     }
 }
