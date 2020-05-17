@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
 
-                <li class="nav-item active"> <a class="nav-link" href="{{ route('home') }}">home</a> </li>
+                <li class="nav-item active"> <a class="nav-link" href="{{ route('home1') }}">home</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="{{ route('about') }}">about</a> </li>
                 <li class="nav-item"><a class="nav-link" href="#">artisan</a></li>
 
